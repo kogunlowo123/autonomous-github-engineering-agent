@@ -115,7 +115,7 @@ class RunPipeline:
         graph.add_edge("finish", END)
         self._graph = graph
 
-    # -- helpers ------------------------------------------------------------------------------
+    # helpers
 
     def _traced(
         self, name: str, func: Callable[[RunState], RunState]
@@ -133,7 +133,7 @@ class RunPipeline:
     def _workdir(self, issue: Issue) -> Path:
         return self._settings.work_dir / f"{issue.repo.replace('/', '-')}-{issue.number}"
 
-    # -- nodes --------------------------------------------------------------------------------
+    # nodes
 
     def _prepare(self, state: RunState) -> RunState:
         settings = self._settings
@@ -191,7 +191,7 @@ class RunPipeline:
         state.note = state.status.value if state.status else ""
         return state
 
-    # -- entry point --------------------------------------------------------------------------
+    # entry point
 
     def run(self, issue: Issue, *, source: str, dry_run: bool) -> RunReport:
         """Process ``issue`` against the repository at ``source``."""

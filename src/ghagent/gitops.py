@@ -43,7 +43,7 @@ class GitRepo:
         self._identity = identity
         self._timeout = timeout
 
-    # -- plumbing -----------------------------------------------------------------------------
+    # plumbing
 
     @staticmethod
     def _run(
@@ -106,7 +106,7 @@ class GitRepo:
         )
         return cls(dest, identity=identity, timeout=timeout)
 
-    # -- queries ------------------------------------------------------------------------------
+    # queries
 
     def current_branch(self) -> str:
         return self.git("rev-parse", "--abbrev-ref", "HEAD").strip()
@@ -124,7 +124,7 @@ class GitRepo:
         self.git("add", "-A", "--intent-to-add")
         return self.git("diff", "HEAD", "--no-color", "--no-ext-diff")
 
-    # -- mutations ----------------------------------------------------------------------------
+    # mutations
 
     def create_branch(self, name: str) -> None:
         self.git("checkout", "--quiet", "-b", name)

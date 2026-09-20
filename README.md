@@ -2,8 +2,6 @@
 
 ![Banner](docs/banner.png)
 
-> If this project is useful, a star helps other engineers find it.
-
 An issue-to-pull-request agent built around one idea: an autonomous system that reads text from
 strangers and writes code should have hard limits that do not depend on the model behaving well.
 

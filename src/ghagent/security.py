@@ -119,7 +119,7 @@ class PathPolicy:
         return None
 
 
-# -- diff scanning ---------------------------------------------------------------------------------
+# diff scanning
 
 _BLOCK_RULES: tuple[tuple[str, re.Pattern[str], str], ...] = (
     (
