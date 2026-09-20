@@ -4,5 +4,5 @@ pip-audit>=2.7
 pytest>=8.0
 pytest-cov>=5.0
 ruff>=0.5
-build>=1.2
+build>=1.6.1
 twine>=7.0.0
