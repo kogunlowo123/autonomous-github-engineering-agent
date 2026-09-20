@@ -17,7 +17,11 @@ class Settings(BaseSettings):
     """Application settings. Secrets are :class:`SecretStr` and never appear in ``repr``."""
 
     model_config = SettingsConfigDict(
-        env_prefix="GHAGENT_", env_file=".env", env_file_encoding="utf-8", extra="ignore"
+        env_prefix="GHAGENT_",
+        env_file=".env",
+        env_file_encoding="utf-8",
+        extra="ignore",
+        populate_by_name=True,
     )
 
     # Mode
