@@ -21,5 +21,6 @@ RUN pip install /tmp/*.whl && rm /tmp/*.whl
 USER ghagent
 WORKDIR /home/ghagent
 VOLUME ["/data"]
+HEALTHCHECK --interval=60s --timeout=10s --retries=3 CMD ["ghagent", "policy"]
 ENTRYPOINT ["ghagent"]
 CMD ["policy"]
