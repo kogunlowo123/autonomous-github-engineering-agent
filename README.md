@@ -2,6 +2,8 @@
 
 ![Banner](docs/banner.png)
 
+**Built by [Citadel Cloud Management](https://www.linkedin.com/company/citadel-cloud-management/)** — follow on LinkedIn for more engineering work like this.
+
 An issue-to-pull-request agent built around one idea: an autonomous system that reads text from
 strangers and writes code should have hard limits that do not depend on the model behaving well.
 
