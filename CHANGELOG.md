@@ -6,6 +6,14 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+### Added
+
+- Container `HEALTHCHECK` that runs `ghagent policy`.
+
+### Fixed
+
+- `Settings` accepts field names as keyword arguments, so `Settings(github_token=...)` is no longer silently ignored.
+
 ## [0.1.0] - 2026-09-19
 
 ### Added
