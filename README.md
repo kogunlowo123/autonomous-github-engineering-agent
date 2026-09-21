@@ -161,7 +161,6 @@ The design assumes the issue author is untrusted and the model can be manipulate
 ```
 autonomous-github-engineering-agent/
 ├── .github/
-│   ├── dependabot.yml
 │   └── workflows/
 │       ├── ci.yml                    # lint, format, types, tests, audit, build
 │       └── codeql.yml
@@ -441,8 +440,7 @@ Static checks: `make lint` (ruff) and `make typecheck` (`mypy --strict`).
 | Dependency audit | `pip-audit` against `requirements.txt` |
 | Build validation | Builds sdist and wheel, `twine check`, builds and smoke-tests the Docker image |
 
-`.github/workflows/codeql.yml` runs CodeQL on pushes, pull requests and weekly. Dependabot proposes
-weekly updates.
+`.github/workflows/codeql.yml` runs CodeQL on pushes, pull requests and weekly.
 
 ## Limitations
 

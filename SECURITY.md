@@ -44,7 +44,7 @@ configuration). You can expect an acknowledgement within 3 business days and a t
 | Argument injection into git | No shell; arguments are lists; ref names are constructed from validated values | `gitops.py` |
 | Markup or mentions in PR text | HTML removed, `@` mentions broken, secrets redacted | `security.neutralize_markdown` |
 | Unsafe deletion of work directories | Deletion only strictly inside the configured work directory | `pipeline._remove_tree` |
-| Vulnerable dependencies | `pip-audit`, Dependabot, CodeQL | `.github/` |
+| Vulnerable dependencies | `pip-audit`, CodeQL | `.github/` |
 
 ## Deployment guidance
 
